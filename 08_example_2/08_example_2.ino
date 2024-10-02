@@ -44,9 +44,9 @@ void loop() {
       distance = _DIST_MIN - 10.0;    // Set Lower Value
       digitalWrite(PIN_LED, 1);       // LED OFF
   } else if (distance <= 200){
-      analogWrite(PIN_LED, -255/100*distance+510);
+      analogWrite(PIN_LED, -255.0 / 100 * distance + 510);
   } else if (distance > 200) {
-      analogWrite(PIN_LED, 255/100*distance-510);
+      analogWrite(PIN_LED, 255.0 / 100 * distance - 510);
   }
 
   // output the distance to the serial port
