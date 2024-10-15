@@ -57,7 +57,6 @@ void loop() {
       dist_filtered = dist_prev;
     }else {
       dist_filtered = dist_raw;
-      //dist_prev = dist_filtered;
     }
 
   // Modify the below line to implement the EMA equation
